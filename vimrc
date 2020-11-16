@@ -19,13 +19,11 @@ call plug#begin()
     Plug 'tpope/vim-surround'
     " Auto pai pra parentesis y comillas, etc.
     Plug 'jiangmiao/auto-pairs'
-    if has('nvim')
-        Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-    else
-        Plug 'Shougo/deoplete.nvim'
-        Plug 'roxma/nvim-yarp'
-        Plug 'roxma/vim-hug-neovim-rpc'
-    endif
+	" Aca lo necesario para autocomplete Hay que isntalar Este modulo de
+	" neovim  sudo pip3 install neovim
+    Plug 'Shougo/deoplete.nvim'
+    Plug 'roxma/nvim-yarp'
+    Plug 'roxma/vim-hug-neovim-rpc'
     " Hago bonito el codigo
     " Hay que isntalar prettire npm install --save-dev --save-exact prettier
     Plug 'prettier/vim-prettier', {
