@@ -8,6 +8,7 @@ Dejo a disposición pública mi configuración del vim. El mismo utilizo para pr
 - ,cc Comenta bloque de lineas.
 - ,c<space> Descomenta bloque de lineas.
 - Ctrl+Shit+i acomoda el codigo utilizando prettier.
+- Ctrl +B para abrir el menu de archivos y ahi dentro m para mostrar menú de opciones
   
 # Algunos comandos antes de ejecutar el PlugInstall
 - curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
