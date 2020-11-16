@@ -31,6 +31,10 @@ call plug#begin()
     Plug 'prettier/vim-prettier', {
       \ 'do': 'yarn install',
       \ 'for': ['javascript',  'php', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
+	" GOTO DEFINITION REACT
+	Plug 'Ivo-Donchev/vim-react-goto-definition'
+	" Colores en lso archivos css
+	Plug 'ap/vim-css-color'
 call plug#end()
 
 " CONFIGURACIONES
@@ -56,6 +60,9 @@ nmap <C-b> :NERDTreeToggle <CR>
 nmap <C-S-i> :Prettier <CR>
 " Ctrl k+c para comentar
 nmap <C-k-c> :NERDCommenterComment <CR>
+" Leader , para abrir la definicion
+nmap <leader>D :call ReactGotoDef()<CR>
+
 " Revviso si existe alguna configuración para la carpeta en si
 let b:thisdir=expand("%:p:h")
 let b:vim=b:thisdir."/.vim"
@@ -86,3 +93,8 @@ let g:NERDCommentEmptyLines = 1
 let g:NERDTrimTrailingWhitespace = 1
 " Enable NERDCommenterToggle to check all selected lines is commented or not 
 let g:NERDToggleCheckAllLines = 1
+
+" Activo los colores del CSS
+let g:cssColorVimDoNotMessMyUpdatetime = 1
+
+
