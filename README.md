@@ -1,11 +1,16 @@
 # vim-rc
-Dejo a disposición pública mi configuración del vim. El mismo utilizo para programar en PHP, Javascript, jQuery, React,  NodeJS y express.
+Configuración simple para desarrolladores que utilizan VIM. El mismo utilizo para programar en PHP, Javascript, jQuery, React,  NodeJS y express.
+
+# Requerimientos
+- vim 8.1+
+- Node 10+
 
 # Instalaciones previas
 
 Para configurar es necesario tener Python3  y la ultima version de npm
 
 - curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+- curl --compressed -o- -L https://yarnpkg.com/install.sh | bash
 - sudo pip3 install neovim
 - sudo npm install --global prettier @prettier/plugin-php
 

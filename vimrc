@@ -26,6 +26,7 @@ call plug#begin()
     Plug 'roxma/vim-hug-neovim-rpc'
     " Hago bonito el codigo
     " Hay que isntalar prettire npm install --save-dev --save-exact prettier
+	" sudo npm install --global prettier @prettier/plugin-php
     Plug 'prettier/vim-prettier', {
       \ 'do': 'yarn install',
       \ 'for': ['javascript',  'php', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
@@ -95,4 +96,5 @@ let g:NERDToggleCheckAllLines = 1
 " Activo los colores del CSS
 let g:cssColorVimDoNotMessMyUpdatetime = 1
 
+let g:prettier#exec_cmd_path = "/usr/local/bin/prettier"
 
