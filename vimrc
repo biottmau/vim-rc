@@ -24,9 +24,10 @@ call plug#begin()
     Plug 'Shougo/deoplete.nvim'
     Plug 'roxma/nvim-yarp'
     Plug 'roxma/vim-hug-neovim-rpc'
+	Plug 'carlitux/deoplete-ternjs'
+	Plug 'ternjs/tern_for_vim'
     " Hago bonito el codigo
     " Hay que isntalar prettire npm install --save-dev --save-exact prettier
-	" sudo npm install --global prettier @prettier/plugin-php
     Plug 'prettier/vim-prettier', {
       \ 'do': 'yarn install',
       \ 'for': ['javascript',  'php', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
@@ -34,6 +35,11 @@ call plug#begin()
 	Plug 'Ivo-Donchev/vim-react-goto-definition'
 	" Colores en lso archivos css
 	Plug 'ap/vim-css-color'
+
+	" cambio deoplete por coc  NODEJS DEPENDENCE curl -sL install-node.now.sh/lts | bash
+	Plug 'neoclide/coc.nvim', {'branch': 'release'}
+	" Or build from source code by using yarn: https://yarnpkg.com
+	Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
 call plug#end()
 
 " CONFIGURACIONES
@@ -96,5 +102,5 @@ let g:NERDToggleCheckAllLines = 1
 " Activo los colores del CSS
 let g:cssColorVimDoNotMessMyUpdatetime = 1
 
-let g:prettier#exec_cmd_path = "/usr/local/bin/prettier"
+colorscheme atom
 
