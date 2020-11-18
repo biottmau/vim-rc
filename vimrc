@@ -21,11 +21,11 @@ call plug#begin()
     Plug 'jiangmiao/auto-pairs'
 	" Aca lo necesario para autocomplete Hay que isntalar Este modulo de
 	" neovim  sudo pip3 install neovim
-    Plug 'Shougo/deoplete.nvim'
-    Plug 'roxma/nvim-yarp'
-    Plug 'roxma/vim-hug-neovim-rpc'
-	Plug 'carlitux/deoplete-ternjs'
-	Plug 'ternjs/tern_for_vim'
+    " Plug 'Shougo/deoplete.nvim'
+    " Plug 'roxma/nvim-yarp'
+    " Plug 'roxma/vim-hug-neovim-rpc'
+	" Plug 'carlitux/deoplete-ternjs'
+	" Plug 'ternjs/tern_for_vim'
     " Hago bonito el codigo
     " Hay que isntalar prettire npm install --save-dev --save-exact prettier
     Plug 'prettier/vim-prettier', {
