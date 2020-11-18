@@ -30,4 +30,4 @@ Para configurar es necesario tener Python3  y la ultima version de npm
 - https://github.com/flazz/vim-colorschemes
  
 # Dentro del vi ejecuto para obtener la ayuda de javascript  
-- :CocInstall coc-json coc-tsserver
+- :CocInstall coc-json coc-tsserver coc-phpls coc-snippets
