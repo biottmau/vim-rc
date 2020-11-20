@@ -25,7 +25,13 @@ Para configurar es necesario tener Python3  y la ultima version de npm
 - ,c<space> Descomenta bloque de lineas.
 - Ctrl+Shit+i acomoda el codigo utilizando prettier.
 - Ctrl +B para abrir el menu de archivos y ahi dentro m para mostrar menú de opciones
-  
+
+# Las configuraciones extras de Coc las coloco en archivos distintos dentro de .vim/config 
+- cp -r vim/config ~/.vim/.
+
+# Agrego carpeta con diferentes esquemas de colores , en su mayoría en Dark mode 
+- cp -r vim/colors ~/.vim/.
+
 # Obtengo los colores de 
 - https://github.com/flazz/vim-colorschemes
  
