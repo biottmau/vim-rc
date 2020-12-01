@@ -20,7 +20,7 @@ Para configurar es necesario tener Python3  y la ultima version de npm
 ## Algunas configuraciones.
 
 - Ctrl+P Busca archivos dentro del folder donestas trabajando para tener acceso rapido sin cerrar el vim
-- Ctrl+B Abre o cierra un Arbol de la estructura de archivos.
+- Ctrl+B Abre o cierra un Arbol de la estructura de archivos. ( se utiliza el coc-explorer  )
 - ,cc Comenta bloque de lineas.
 - ,c<space> Descomenta bloque de lineas.
 - Ctrl+Shit+i acomoda el codigo utilizando prettier.
@@ -36,4 +36,4 @@ Para configurar es necesario tener Python3  y la ultima version de npm
 - https://github.com/flazz/vim-colorschemes
  
 ## Dentro del vi ejecuto para obtener la ayuda de javascript  
-- :CocInstall coc-json coc-tsserver coc-phpls coc-snippets
+- :CocInstall coc-json coc-tsserver coc-phpls coc-snippets coc-explorer coc-git

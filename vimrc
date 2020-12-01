@@ -62,7 +62,7 @@ let mapleader="," " Cambio el <leader> key porque no se cual es el mio.. :(
 " Ctrl P Abre la busqueda de archivos
 nmap <C-p> :Files <CR>
 " Ctrl B Abre el menu tree de folder y archivos 
-nmap <C-b> :NERDTreeToggle <CR>
+nmap <C-b> :CocCommand explorer --quit-on-open  <CR>
 " Ctrl Shit I acomoda Automaticamente el codigo completo
 nmap <C-S-i> :Prettier <CR>
 " Ctrl k+c para comentar
@@ -112,9 +112,10 @@ let g:NERDToggleCheckAllLines = 1
 " Activo los colores del CSS
 let g:cssColorVimDoNotMessMyUpdatetime = 1
 
-colorscheme wombat256mod
+set background=dark
+colorscheme  grovbox
 
 " Configuracion de COC 
 execute "source ~/.vim/config/cocConfig.vim"
-execute "source ~/.vim/config/cocSnippets.vim"
+" execute "source ~/.vim/config/cocSnippets.vim"
 
