@@ -41,6 +41,8 @@ call plug#begin()
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 	" Or build from source code by using yarn: https://yarnpkg.com
 	Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
+	" Instalo el plug de vim-fugitive
+	Plug 'tpope/vim-fugitive'	
 call plug#end()
 
 " CONFIGURACIONES
